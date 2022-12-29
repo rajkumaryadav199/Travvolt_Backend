@@ -63,6 +63,8 @@ app.get("/", (req, res) => {
 // routes
 require("./routes/auth.routes")(app);
 require("./routes/user.routes")(app);
+require("./routes/flight.routes")(app);
+require("./routes/hotel.routes")(app);
 
 mongoose
   .connect(configs.mongoUrl.DEVELOPMENT, {
